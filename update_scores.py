@@ -50,7 +50,7 @@ def Predict_petal2(dataset):
     SF_Id = SF_Id.values.tolist()
 
     ## Predict 
-    Predicted_Output = (2+dataset['petal_length__c']).to_list()
+    Predicted_Output = (2*dataset['petal_length__c']).to_list()
     Predict_List = list(zip(Predicted_Output, SF_Id))
 
     return Predict_List
